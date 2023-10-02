@@ -1,7 +1,5 @@
 package android.example.solaraandroid.POJO
 
-import java.time.LocalDate
-
 data class Empresa (
     val id: Int,
     val nome : String,
