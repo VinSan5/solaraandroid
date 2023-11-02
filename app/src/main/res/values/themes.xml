@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.SolaraAndroid" parent="Base.Theme.SolaraAndroid"/>
+    <style name="Theme.SolaraAndroid.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.SolaraAndroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.SolaraAndroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:background="#293342"
-        tools:context=".MainActivity">
+        tools:context=".android.example.solaraandroid.Consultar">
     <TextView
             android:id="@+id/dadosDaApi"
             android:layout_width="wrap_content"

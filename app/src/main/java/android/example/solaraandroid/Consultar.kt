@@ -1,7 +1,8 @@
-package android.example.solaraandroid
+package android.example.solaraandroid.android.example.solaraandroid
 
 import android.annotation.SuppressLint
 import android.example.solaraandroid.POJO.Empresa
+import android.example.solaraandroid.R
 import android.example.solaraandroid.service.ApiService
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
