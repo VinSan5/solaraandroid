@@ -4,5 +4,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#1B2647</color>
     <color name="colorPrimaryDark">#0A132B</color>
-    <color name="colorAccent">#BD7801</color>
+    <color name="colorAccent">#FF8316</color>
+    <color name="scheduleApprove">#89FFB7</color>
+    <color name="scheduleDenial">#FF8383</color>
+
+    <color name="custom_unfocused_month_date_color">#A0A0A0</color>
+    <color name="custom_focused_month_date_color">#000000</color>
+    <color name="custom_selected_week_background_color">#FFDDDD</color>
+    <color name="custom_date_text_color">#FFFFFF</color>
+    <color name="custom_week_number_text_color">#00FF00</color>
 </resources>

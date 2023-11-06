@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:text="LOGIN SCREEN"
+            android:text="SOLARA"
             android:textColor="#222934"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -57,11 +57,11 @@
         app:layout_constraintTop_toBottomOf="@id/tv_title">
 
         <EditText
-            android:id="@+id/et_login_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            tools:text="abc@gmail.com"></EditText>
+                android:id="@+id/et_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                tools:text="abc@gmail.com"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,11 +97,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/colorAccent"
-        android:foreground="?attr/selectableItemBackground"
         android:layout_gravity="center"
         android:text="Login"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

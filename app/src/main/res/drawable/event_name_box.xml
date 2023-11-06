@@ -1,0 +1,11 @@
+<!-- custom_edittext_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/colorAccent" android:width="3dp" />
+            <corners android:radius="20dp" />
+            <size android:height="50dp" />
+            <padding android:bottom="2sp" android:left="15sp"/>
+        </shape>
+    </item>
+</layer-list>

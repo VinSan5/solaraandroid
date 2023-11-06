@@ -17,6 +17,9 @@
             android:usesCleartextTraffic="true"
             tools:targetApi="31">
         <activity
+                android:name=".activity_example"
+                android:exported="false"/>
+        <activity
                 android:name=".LoginActivity"
                 android:exported="true"
                 android:label="@string/title_activity_login">
@@ -26,12 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
                 android:name=".MainActivity"
                 android:exported="false"
                 android:theme="@style/Theme.SolaraAndroid"/>
-
         <activity
                 android:name=".android.example.solaraandroid.Consultar"
                 android:exported="true">

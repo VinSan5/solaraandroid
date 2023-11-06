@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val currentUser = FirebaseAuth.getInstance().currentUser
         if(currentUser != null) {
-            val nomeUsuario = currentUser.email //pega o nome do usuário, porque a gente quer o nome do usuário
+            val nomeUsuario = currentUser.email //pega o email do usuário, porque a gente quer o email do usuário
             if (nomeUsuario != null) {
                 val welcomeText = findViewById<TextView>(R.id.welcomeText)
                 welcomeText.text = "Seja bem-vindo\n$nomeUsuario" //diz "oi oi" pro usuário
