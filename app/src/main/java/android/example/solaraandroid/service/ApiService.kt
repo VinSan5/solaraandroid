@@ -14,6 +14,6 @@ interface ApiService {
     fun getEmpresa(): Call<List<Empresa>> //Retorna uma lista das empresas
 
     @POST("eventos/salvarEvento")
-    fun postEvent(@Body event: Evento): Call<String>
+    fun postEvent(@Body event: Evento): Call<Response<String>>
 
 }
