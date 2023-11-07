@@ -98,7 +98,7 @@ class Reserva : AppCompatActivity() {
                 Toast.makeText(this@Reserva, "A data não é válida", Toast.LENGTH_LONG).show()
             } else {
                 val evento = Evento(
-                    emailUsu = userMail,
+                    email = userMail,
                     evento = eventName.text.toString(),
                     espaco = selectedSpace,
                     date = eventDate.toString()
@@ -106,8 +106,8 @@ class Reserva : AppCompatActivity() {
 
                 val call = apiService.postEvent(evento)
 
-                call.enqueue(object : Callback<String> {
-                    override fun onResponse(call: Call<String>, response: Response<String>) {
+                call.enqueue(object : Callback<Response<String>> {
+                    override fun onResponse(call: Call<Response<String>>, response: Response<Response<String>>) {
                         if (response.isSuccessful) {
                             val resposta = response.body()
                             Toast.makeText(this@Reserva, "Agendamento feito com sucesso", Toast.LENGTH_LONG).show()
@@ -116,7 +116,7 @@ class Reserva : AppCompatActivity() {
                         }
                     }
 
-                    override fun onFailure(call: Call<String>, t: Throwable) {
+                    override fun onFailure(call: Call<Response<String>>, t: Throwable) {
                         Toast.makeText(this@Reserva, "Ops, ocorreu um erro", Toast.LENGTH_LONG).show()
                     }
                 })
