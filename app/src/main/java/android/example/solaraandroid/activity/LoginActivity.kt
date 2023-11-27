@@ -1,7 +1,7 @@
-package android.example.solaraandroid
+package android.example.solaraandroid.activity
 
-import android.annotation.SuppressLint
 import android.content.Intent
+import android.example.solaraandroid.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils

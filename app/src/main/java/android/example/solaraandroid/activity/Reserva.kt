@@ -1,8 +1,9 @@
-package android.example.solaraandroid
+package android.example.solaraandroid.activity
 
 
 import android.annotation.SuppressLint
 import android.example.solaraandroid.POJO.Evento
+import android.example.solaraandroid.R
 import android.example.solaraandroid.service.ApiService
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -98,7 +99,7 @@ class Reserva : AppCompatActivity() {
                 Toast.makeText(this@Reserva, "A data não é válida", Toast.LENGTH_LONG).show()
             } else {
                 val evento = Evento(
-                    email = userMail,
+                    emailmorador = userMail,
                     evento = eventName.text.toString(),
                     espaco = selectedSpace,
                     date = eventDate.toString()

@@ -45,7 +45,7 @@
                 android:gravity="top"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                tools:context=".MainActivity">
+                tools:context=".activity.MainActivity">
             <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
 
                 <LinearLayout
@@ -54,16 +54,6 @@
                         android:layout_marginEnd="10dp"
                 >
 
-
-                    <Button
-                            android:id="@+id/consultar_click"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:background="#C63F00"
-                            android:text="Teste de API"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="abrirAtividadeReservas"
-                    />
 
                     <Button
                             android:id="@+id/select_reserva"
@@ -76,10 +66,11 @@
                     />
 
                     <Button
+                            android:id="@+id/chat"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="#C63F00"
-                            android:text="Editais"
+                            android:text="Conversas"
                             android:layout_marginEnd="10dp"
                             android:onClick="abrirAtividadeEditais"
                     />
@@ -88,7 +79,7 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="#C63F00"
-                            android:text="Eventos"
+                            android:text="Avisos"
                             android:layout_marginEnd="10dp"
                             android:onClick="abrirAtividadeEventoss"
                     />

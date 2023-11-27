@@ -1,11 +1,11 @@
-package android.example.solaraandroid
+package android.example.solaraandroid.activity
 
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-import android.example.solaraandroid.android.example.solaraandroid.Consultar
+import android.example.solaraandroid.R
 import android.widget.Button
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
@@ -26,11 +26,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val consultarClick = findViewById<Button>(R.id.consultar_click)
-            consultarClick.setOnClickListener {
-                val intent = Intent(this, Consultar::class.java)
-                startActivity(intent)
-            }
 
         val startReserva = findViewById<Button>(R.id.select_reserva)
         startReserva.setOnClickListener {
@@ -38,6 +33,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val startChat = findViewById<Button>(R.id.chat)
+        startChat.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
         }
 
     }
+
+}
